@@ -14,11 +14,15 @@ const HomePage = () => {
   const [totalPages, setTotalPages] = useState(0);
   const [page, setPage] = useState(1);
 
+  const observerTarget = useRef(null);
+
+  useEffect(() => {
+    document.title = "Unsoul";
+  }, []);
+
   useEffect(() => {
     getPhotos();
   }, [page]);
-
-  const observerTarget = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(

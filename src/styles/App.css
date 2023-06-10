@@ -1,0 +1,86 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.loader {
+  border: 8px solid #4acff1;
+  border-radius: 50%;
+  border-top: 8px solid #00a0c8;
+  width: 24px;
+  height: 24px;
+  -webkit-animation: rotation 2s linear infinite; /* Safari */
+  animation: rotation 2s linear infinite;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+input {
+  background: #f0f4ff;
+  border-radius: 9px;
+  padding: 16px 8px;
+  border: 1px solid #737480;
+}
+
+.text-center {
+  text-align: center;
+}
+
+button {
+  background: #00a0c8;
+  border-radius: 9px;
+  border: unset;
+  color: white;
+  cursor: pointer;
+  padding: 16px 24px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  border: 1px solid #888;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.text-white {
+  color: white;
+}
